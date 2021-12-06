@@ -1,7 +1,10 @@
 'use strict';
 
-
+const enter = document.querySelector('.enter').value;
 const name = document.querySelector(".name");
+
+const popup = document.querySelector(".popup");
+
 
 
 // Oh yes button
@@ -27,7 +30,7 @@ document.querySelector(".ohYes").addEventListener("click", function(){
 
 // btn-primary
 
-document.querySelector(".btn-primary").addEventListener("click", function(){
+const click =document.querySelector(".btn-primary").addEventListener("click", function(){
 
    const birth = document.querySelector(".birth").value;
 
@@ -40,11 +43,32 @@ document.querySelector(".btn-primary").addEventListener("click", function(){
        score = 5;
    }
 
-  console.log(`your score is ${score}`);
-  console.log(birth);
+   const names = [];
+
+
+   //pop up function
+   
+    const popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+
+ 
+
+
+  
+  const popscore = document.querySelector(".popscore");
+  popscore.textContent = score;
 
 
 })
+
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Escape' || e.key=== 'Enter' && !popup.classList.contains('hidden')) {
+    popup.classList.add("hidden");
+  }
+});
+
+
+
 
 
 
