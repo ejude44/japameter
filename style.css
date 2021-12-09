@@ -1,20 +1,61 @@
 .main {
   opacity: 0;
+  background-image: linear-gradient(to top left, #39b385, #9be15d);
+
+  border-radius: 1rem;
+  padding: 3rem 4rem;
+  color: #333;
+}
+
+.name {
+  font-size: 25px;
+  font-weight: bolder;
+  color: blue;
+}
+
+.form {
+  position: relative;
+  box-sizing: border-box;
+  padding-left: 20rem;
+}
+.footer {
+  margin-top: 30px;
+
+  background-image: linear-gradient(to top left, #ffb003, #ffcb03);
+}
+
+.btn-primary {
+  padding: 1rem;
+  margin-top: 20px;
+}
+
+.display1 {
+  margin-bottom: 1.5rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #333;
 }
 
 .first-pop-up {
-  opacity: "";
+  opacity: 1;
+  background-image: linear-gradient(to top left, #ffb003, #ffcb03);
+
+  border-radius: 1rem;
+  padding: 3rem 4rem;
+  color: #333;
 }
 
 .ohYes {
-  background-color: red;
+  background-color: rgb(23, 25, 146);
   color: azure;
+  position: relative;
+  float: "";
 }
 
 /* Pop-up arear*/
 /* Popup container */
 .popup {
-  position: absolute;
+  position: relative;
   display: inline-block;
   cursor: progress;
 }
@@ -28,7 +69,9 @@
   visibility: hidden;
   width: 400px;
   height: 400px;
-  background-color: #555;
+
+  background-color: rgb(3, 3, 14);
+
   color: #fff;
   text-align: center;
   border-radius: 6px;
@@ -37,6 +80,11 @@
   z-index: 10;
 
   left: 50%;
+  margin-left: 15rem;
+}
+
+.close {
+  color: rgb(207, 57, 57);
 }
 
 /* Popup arrow */

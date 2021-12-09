@@ -1,0 +1,32 @@
+on page load, pop-up with form. Hi, *'enter name'... want to know where you stand?
+buttton Oh yes, to japa meter. without a name entry you cannot remove the pop-up.
+
+after name entry and yes click. page is displayed.
+
+
+Hi, {name} Please take just 30secs  to fill out the form. 
+
+form data
+place of birth....field
+age.....field
+account balance...drop down
+travel destination.... field
+are you related to a Politician?... checkbox
+level of education.....drop dwon
+marital status.....drop down
+do you have a passport?....check box
+working? student?.... check box
+
+
+submit button=> check
+
+on check click another pop up loads with the meter embeded.with score accrued.
+if score > or <
+congrats your score on the japameter is, {countty} plus flag awaits you.
+just dey your dey {naija plus flag} na for we
+will you keep kwayet ahahah
+no hope abeg.
+
+close
+
+on check again clcik ...page reload
