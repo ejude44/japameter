@@ -1,13 +1,18 @@
 'use strict';
 
 const enter = document.querySelector('.enter').value;
-const name = document.querySelector(".name");
+const nam = document.querySelector(".name");
+
+
+
+const popname= document.querySelector(".popupname");
 
 const popup = document.querySelector(".popup");
 
 const popups = document.getElementById("myPopup");
 
 
+const names = []
 
 // Oh yes button
 document.querySelector(".ohYes").addEventListener("click", function(){
@@ -18,12 +23,16 @@ document.querySelector(".ohYes").addEventListener("click", function(){
 
     } else{
 
-    const name = document.querySelector(".name");
-   name.textContent = enter;
+    const nam = document.querySelector(".name");
+   nam.textContent = enter;
 
    document.querySelector(".main").style.opacity = 100;
 
    document.querySelector(".first-pop-up").style.opacity = 0;
+
+   names.push(enter);
+
+   console.log(names);
    
 
     }
@@ -33,6 +42,10 @@ document.querySelector(".ohYes").addEventListener("click", function(){
 // btn-primary
 
 const click =document.querySelector(".btn-primary").addEventListener("click", function(e){
+
+  
+popname.textContent = names[0];
+
 
   e.preventDefault();
   const birth = document.querySelector(".birth").value;
